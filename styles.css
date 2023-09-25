@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu&family=Varela+Round&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+body
+{
+    line-height: 1.6;
+}
+
+h1
+{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 60px 0;
+}
+
+form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#search-input
+{
+    padding: 10px 21px ;
+    width: 40%;
+    border: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+.search-button
+{
+padding: 10px 20px;
+background-color: #138065;
+color: white;
+border: none;
+font-size: 18px;
+box-shadow: 0 0 6px rgba(0,0,0,0.2);
+cursor: pointer;
+margin-left: 10px;
+border-radius: 5px;
+
+}
+
+
+.Search-results{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.Search-result{
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+
+.Search-result img
+{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.Search-result:hover img
+{
+    opacity: 0.8;
+}
+
+
+.Search-result a
+{
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+#show-more-button
+{
+    padding: 10px 20px;
+background-color: #008cba;
+color: white;
+border: none;
+text-align: center;
+display: none;
+font-size: 18px;
+box-shadow: 0 0 6px rgba(0,0,0,0.2);
+cursor: pointer;
+margin: 30px auto;
+border-radius: 5px;
+}
+
+@media  screen and (max-width:768px) {
+   
+    .Search-results
+    {
+        padding: 20px;
+    }
+    
+    .Search-result
+    {
+        width: 45%;
+    }
+    
+}
+
+
+@media  screen and (max-width:480px) {
+    .Search-result
+    {
+        width: 100%;
+    }
+    
+}
